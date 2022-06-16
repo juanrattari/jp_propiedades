@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JP Propiedades | Vender</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="../css/index.css">
     <link rel="shortcut icon" href="../img/favicon.jpg">
 </head>
@@ -71,20 +72,27 @@
             </section> 
         </div>
         <div class="comentario">
-            <div class="comentario__item">
+            <div class="comentario__item" data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine" data-aos-duration="2000">
                 <p>Muy respetuosos y cumplidores! Ya disfrutamos de nuestra nueva casa!</p>
                 <img src="../img/comentario1.png" alt="Foto del cliente">
-                
             </div>
-            <div class="comentario__item">
+            <div class="comentario__item" data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine" data-aos-duration="2000">
                 <p>Muchas gracias por asesorarnos y cumplir nuestro sueño.</p>
                 <img src="../img/comentario2.png" alt="Foto del cliente">
             </div>
-            <div class="comentario__item">
+            <div class="comentario__item" data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine" data-aos-duration="2000">
                 <p>100% recomendables!!!</p>
                 <img src="../img/comentario3.png" alt="Foto del cliente">
             </div>
-            <div class="comentario__item">
+            <div class="comentario__item" data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine" data-aos-duration="2000">
                 <p>El martillero hizo que todo sea simple! Muchas gracias!</p>
                 <img src="../img/comentario4.png" alt="Foto del cliente">
             </div>
@@ -92,15 +100,32 @@
     </main>
     <footer>
         <section>
-            <p class="centrar">
-                <span class="iconify" data-icon="carbon:logo-facebook" data-width="30"></span>
-                <span class="iconify" data-icon="carbon:logo-youtube" data-width="30"></span>
-                <span class="iconify" data-icon="carbon:logo-instagram" data-width="30"></span>
-            </p>
+          <ul>
+            <li>
+              <a href="https://es-la.facebook.com/">
+                <span class="iconify" data-icon="carbon:logo-facebook" data-width="30">
+                </span>
+              </a> 
+            </li>
+            <li>
+              <a href="https://www.youtube.com/">
+                <span class="iconify" data-icon="carbon:logo-youtube" data-width="30">
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/">
+                <span class="iconify" data-icon="carbon:logo-instagram" data-width="30">
+                </span>
+              </a>
+            </li>
+          </ul> 
         </section>
         <p>Derechos reservados Juan Pablo Propiedades 2022 <span class="iconify" data-icon="icon-park-outline:handle-c"></span></p>
     </footer>
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
-    </footer>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>

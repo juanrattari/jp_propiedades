@@ -10,6 +10,40 @@ html{
     font-size: 62.5%;
 }
 
+/*correciones de bootstrap*/
+
+dl, ol, ul {
+    margin-bottom: 0;
+    padding-left:0;
+}
+
+.bg-light {
+    --bs-bg-opacity: 0;
+    background-color: 0;
+}
+
+.navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+    flex-wrap:inherit;
+    
+}
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+    color: rgb(216, 213, 213);
+    text-decoration: underline;
+    font-weight: bold;
+    
+}
+.nav-link {
+    color: white;
+}
+
+a {
+    color:rgb(62,80,91);
+}
+
+.img-fluid {
+    width: 50%;
+}
+
 /*apariencia de texto e imagenes*/
 
 body{
@@ -21,7 +55,7 @@ main{
 }
 
 img{
-    width: 100%;
+ width: 100%;
 }
 
 .centrar{
@@ -39,7 +73,7 @@ h1{
     margin: 15px auto;
     padding: 7px 0;
     max-width: 1200px;
-    font-size: 30px;
+    font-size: 3em;
     box-shadow:
     0px 0px 5.7px rgba(0, 0, 0, 0.025),
     0px 0px 14.5px rgba(0, 0, 0, 0.035),
@@ -50,12 +84,12 @@ h1{
 
 h2{
     color:#795948;
-    font-size: 25px;
+    font-size: 2.5em;
     text-align: center;
 }
 p{
     font-weight: 300;
-    font-size:20px;
+    font-size:2em;
 }
 
 /*encabezado*/
@@ -91,7 +125,7 @@ ul{
     text-decoration:none;
     color:aliceblue;
     padding: 1rem 1.5rem;
-    font-size: 20px;
+    font-size:2em;
     transition: all 1s;
     margin: 2px; 
 }
@@ -130,7 +164,7 @@ ul{
     grid-column: 1/3;
     color: rgba(62, 80, 91);
     font-weight: bold;
-    font-size: 60px;
+    font-size: 6em;
     line-height: 1.8;
     margin: auto 0px;
     backdrop-filter: blur(4px);
@@ -163,11 +197,6 @@ ul{
 .oportunidad__titulo{
     grid-column: 1/3;
     color: rgb(39, 49, 54);
-    animation-name: rotar;
-    animation-duration:4s;
-    animation-timing-function:linear;
-    animation-iteration-count: infinite;
-    
 }
 
 .oportunidad__texto{
@@ -225,6 +254,10 @@ ul{
     gap: 1rem;
     margin: 20px 0px;
     align-items: center;
+}
+
+.galeria picture img{
+    width: 100%;
 }
 
 .galeria .galeria__img:nth-of-type(1){
@@ -293,7 +326,9 @@ ul{
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    margin-top: 40px;
+    margin-top:50px;
+    margin-bottom: 100px;
+
 }
 
 .comentario__item{
@@ -304,7 +339,7 @@ ul{
     height: 150px;
     background-image: linear-gradient(to left, rgb(247, 244, 244),  rgb(39, 49, 54));
     border-radius: 5px;
-    margin: 10px;
+    margin: 30px;
     padding: 10px;
 }
 
@@ -316,7 +351,6 @@ ul{
 
 .comentario__item img{
     width: 30%;
-    height: 70%;
 }
 
 
@@ -380,7 +414,7 @@ body main div form textarea{
 }
 
 label{
-    font-size: 15px;
+    font-size: 1.5em;
 }
 
 .campo{
@@ -404,7 +438,7 @@ label{
     background-color: aliceblue;
     font-family:'Josefin Sans', sans-serif;
     font-weight: 600;
-    font-size:15px;
+    font-size:1.5em;
 }
 
 /*pie de pagina*/
@@ -414,19 +448,30 @@ footer{
     font-style: oblique;
     background-color: #c7c7c7;
     text-align: center;
+    padding: 10px;
 }
 
 footer p{
-    font-size: 13px;
+    font-size: 1.3em;
     text-align: right;
     max-width: 1200px;
     margin: 0 auto;
 
 }
 
-@media screen and (max-width: 768px) {
+footer section ul{
+    justify-content: center;
+}
+
+@media screen and (max-width: 1024px) {
+    .oportunidad__texto{
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 767px) {
     .titulo-principal{
-        font-size: 30px;
+        font-size: 3em;
         grid-column: 1/2;
     }
     #grilla{ 
@@ -444,28 +489,30 @@ footer p{
         flex-direction: column;
     }
     
-    .menu__link{
-        margin: 0;
-        padding: 5px;
-        font-size: 15px;
-    }
     body main section div h2{
-        font-size: 17px;
+        font-size: 2.3em;
     }
-    body main section div p{
-        font-size: 14px;
+    .oportunidad__texto{
+        font-size: 1.8em;
     }
     h1{
-        font-size: 20px;
+        font-size: 2em;
     } 
     h2{
-        font-size: 17px;
+        font-size: 1.7em;
     }
     .fondo-venta{
         justify-content:center;
     }
     .fondo-contacto{
         justify-content: center;
+    }
+    p{
+        font-size: 1.5em;
+    }
+    
+    .img-fluid {
+        width: 80%;
     }
 }
 
@@ -505,11 +552,22 @@ footer p{
     } 
     
     .comentario__item{
-        width: 300px;
-        height: 200px;
+        width: 240px;
+        height: 100px;
         
     }
+    ul{
+        font-size: 1em;
+    }
+    
+    .menu__link{
+        margin: 0;
+        padding: 5px;
+        font-size: 1.3em;
+    }
 }
+
+
 
 @keyframes rotar{
 
