@@ -12,20 +12,12 @@ html{
 
 /*correciones de bootstrap*/
 
-dl, ol, ul {
-    margin-bottom: 0;
-    padding-left:0;
-}
-
 .bg-light {
     --bs-bg-opacity: 0;
     background-color: 0;
 }
 
-.navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
-    flex-wrap:inherit;
-    
-}
+
 .navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
     color: rgb(216, 213, 213);
     text-decoration: underline;
@@ -58,10 +50,6 @@ img{
  width: 100%;
 }
 
-.centrar{
-    text-align: center;
-}
-
 .borde-redondeado{
     border-radius: 5px;
 }
@@ -87,9 +75,11 @@ h2{
     font-size: 2.5em;
     text-align: center;
 }
+
 p{
     font-weight: 300;
     font-size:2em;
+    text-align: center;
 }
 
 /*encabezado*/
@@ -107,33 +97,10 @@ header nav{
     margin: 0 auto;
 }
 
-ul{
-    list-style-type: none;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    font-weight: 400;
-}
-
 .menu__logo{
     width: 180px;
     height: auto;
     padding: 7px 0;
-}
-
-.menu__link{
-    text-decoration:none;
-    color:aliceblue;
-    padding: 1rem 1.5rem;
-    font-size:2em;
-    transition: all 1s;
-    margin: 2px; 
-}
-
-.menu__link:hover {
-    color: black;
-    background-color: rgba(240, 248, 255, 0.733);
-    
 }
 
 /*atributos de pagina home*/
@@ -205,35 +172,7 @@ ul{
 
 /*info propiedades*/
 
-.propiedad{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: stretch;
-    padding: 10px;
-    max-width: 1200px;
-    margin: 0 auto;
-    
-}
-
 .propiedad__item{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    width: 350px;
-    height: 400px;
-    background-color:rgba(245, 239, 239, 0.904);
-    overflow: auto; 
-    text-align: center;
-    padding: 15px;
-    margin: 13px;
-    box-shadow:
-    0px 0px 5.7px rgba(0, 0, 0, 0.025),
-    0px 0px 14.5px rgba(0, 0, 0, 0.035),
-    0px 0px 29.6px rgba(0, 0, 0, 0.045),
-    0px 0px 61px rgba(0, 0, 0, 0.055),
-    0px 0px 167px rgba(0, 0, 0, 0.08);
     transition: transform 0.6s;
 }
 
@@ -241,9 +180,6 @@ ul{
     transform: scale(1.02);
 }
 
-.propiedad__item img{
-    height: 50%;
-}
 
 /*galeria*/
 
@@ -456,12 +392,15 @@ footer p{
     text-align: right;
     max-width: 1200px;
     margin: 0 auto;
-
 }
 
 footer section ul{
     justify-content: center;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: nowrap;
 }
+
 
 @media screen and (max-width: 1024px) {
     .oportunidad__texto{
