@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
 *{
     margin: 0;
@@ -19,17 +20,18 @@ html{
 
 
 .navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
-    color: rgb(216, 213, 213);
+    color: #a6abb4;
     text-decoration: underline;
     font-weight: bold;
     
+    
 }
 .nav-link {
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 a {
-    color:rgb(62,80,91);
+    color: #3e505b ;
 }
 
 .img-fluid {
@@ -85,7 +87,7 @@ p{
 /*encabezado*/
 
 header{
-    background-color:rgb(62,80,91);
+    background-color:#3e505b;
 }
 
 header nav{
@@ -163,7 +165,7 @@ header nav{
 
 .oportunidad__titulo{
     grid-column: 1/3;
-    color: rgb(39, 49, 54);
+    color: #273136;
 }
 
 .oportunidad__texto{

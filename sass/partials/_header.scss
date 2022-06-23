@@ -1,0 +1,37 @@
+/* Header */
+
+header{
+    background-color:#3e505b;
+    
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: 0 auto;
+
+        .menu__logo{
+            width: 180px;
+            height: auto;
+            padding: 7px 0;
+        }
+        
+        .navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+            color: #a6abb4;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+
+        .nav-link {
+            color: $color-base;
+        }
+
+        .bg-light {
+            --bs-bg-opacity: 0;
+            background-color: 0;
+        }
+    
+    }
+    
+}

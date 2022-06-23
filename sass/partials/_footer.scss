@@ -1,0 +1,29 @@
+/* Footer */
+
+footer{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+    background-color: #c7c7c7;
+    text-align: center;
+    padding: 10px;
+
+    section ul{
+        justify-content: center;
+        list-style-type: none;
+        display: flex;
+        flex-wrap: nowrap;
+        
+        a {
+            color: $color-primary;
+        }
+    }
+    
+    p{
+        font-size: 1.3em;
+        text-align: right;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+
