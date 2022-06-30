@@ -2,11 +2,21 @@
 @import "./misc/variables";
 @import "./misc/normalize";
 @import "./misc/mixins";
+@import "./misc/form";
 
 /* PARTIALS */
 @import "./partials/header";
 @import "./partials/footer";
 
 /* VIEWS */
-@import "./views/home"
+@import "./views/home";
+@import "./views/comprar";
+@import "./views/vender";
+@import "./views/alquilar";
+@import "./views/contacto";
+
+/* MEDIA QUERIES */
+@import "./misc/mediaqueries";
+
+
 

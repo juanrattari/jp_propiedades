@@ -1,0 +1,30 @@
+/* Comprar */
+
+.propiedad-vendida{
+    @include flex (column, center, center, 3px);
+
+    .propiedad-vendida-item{
+        @include flex (column, center, center, 1px);
+        margin: 20px auto;
+        transition: transform 0.6s;
+
+        &:hover{
+            transform: scale(1.02);
+        }
+
+        p{
+            text-decoration: underline;
+        }
+
+        img{
+            width: 85%;
+            border-radius: 3px;
+            box-shadow:
+            0px 0px 5.7px rgba(0, 0, 0, 0.025),
+            0px 0px 14.5px rgba(0, 0, 0, 0.035),
+            0px 0px 29.6px rgba(0, 0, 0, 0.045),
+            0px 0px 61px rgba(0, 0, 0, 0.055),
+            0px 0px 167px rgba(0, 0, 0, 0.08); 
+        }
+    }
+}

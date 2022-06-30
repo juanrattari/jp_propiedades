@@ -1,0 +1,76 @@
+/* formulario de contacto */
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    justify-items: center;
+    background-color: $color-primary;
+    padding: 20px;
+    width: 300px;
+    height: 440px;
+    border-radius: 5px;
+    color: $color-base;
+
+    input{
+        color: black;
+        font-weight: 600;
+    }
+    
+    textarea{
+        font-family: $font-principal;
+        color: black;
+        font-weight: 600;
+    }
+    
+    label{
+        font-size: $text-small;
+    }
+    
+    .campo{
+        border: solid 1px;
+        padding: 10px;
+        width: 240px;
+        font-family: $font-principal;
+        border-radius: 3px; 
+        font-size: $text-xsmall;
+    }
+    
+    .boton{
+        display: flex;
+        justify-content: space-between;
+        width: 240px;
+
+        .btn{
+            border-radius: 5px;
+            padding: 15px 30px;
+            margin-top: 8px;
+            color: $color-base;
+            font-family: $font-principal;
+            font-weight: 600;
+            font-size: $text-small;
+            border: solid 1px black;
+        }
+        
+        .btn--enviar{
+            @extend .btn;
+            background-color:#0d4b3e;
+            &:hover{
+                background-color: #0e574844;
+            }
+        }
+
+        .btn--borrar{
+            @extend .btn;
+            background-color:#e94545ea;
+            &:hover{
+                background-color: #e945456c;
+            }
+        }
+    }
+    
+
+   
+}
+

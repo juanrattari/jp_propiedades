@@ -1,0 +1,19 @@
+/* Contacto */
+
+/* Formulario de contacto */
+
+.fondo-contacto{
+    display: flex;
+    justify-content: flex-start;
+    background-image: url(../img/vista-aerea.jpg);
+    background-size:cover;
+    background-position: center; 
+    margin: 20px auto;
+    max-width: 1200px;
+    box-shadow:
+    0px 0px 5.7px rgba(0, 0, 0, 0.025),
+    0px 0px 14.5px rgba(0, 0, 0, 0.035),
+    0px 0px 29.6px rgba(0, 0, 0, 0.045),
+    0px 0px 61px rgba(0, 0, 0, 0.055),
+    0px 0px 167px rgba(0, 0, 0, 0.08);
+}

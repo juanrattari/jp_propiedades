@@ -1,8 +1,7 @@
 /* Footer */
 
 footer{
-    font-family: 'Times New Roman', Times, serif;
-    font-style: oblique;
+    font-family: $font-title;
     background-color: #c7c7c7;
     text-align: center;
     padding: 10px;
@@ -19,7 +18,7 @@ footer{
     }
     
     p{
-        font-size: 1.3em;
+        font-size: $text-xsmall;
         text-align: right;
         max-width: 1200px;
         margin: 0 auto;
