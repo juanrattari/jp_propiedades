@@ -15,6 +15,9 @@ html{
 /* Apariencia de texto e imagenes */
 
 body{
+    display: grid;
+    grid-auto-rows: auto 1fr auto;
+    min-height: 100vh;
     font-family: $font-principal;
     @if $theme == "dark" {
         background-color: $color-alternative-s;

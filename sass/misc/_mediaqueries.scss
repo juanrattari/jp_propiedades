@@ -2,10 +2,20 @@
     .oportunidad__texto{
         font-size: 1.2em;
     }
+    .ventas .ventas__item .ventas__item__descripcion{
+        font-size: $text-small;
+        height: 180px;
+    }
 }
 
 @media screen and (max-width: 767px) {
 
+    .historia{
+        p{
+            padding: 1rem;
+        }
+    }
+    
     .contenedor{
 
         #grilla{ 
@@ -62,13 +72,20 @@
     .img-fluid {
         width: 80%;
     }
+
+    .ventas{
+        flex-direction: column;
+        .ventas__item{
+            width: 80%;
+            .ventas__item__descripcion{
+                height: 250px;
+            }
+        }
+    }
+
 }
 
 @media screen and (max-width: 600px) {
-
-    .historia{
-        padding:3rem;
-    }
 
     .galeria {
         grid-template-rows: repeat(4, auto);
@@ -114,22 +131,32 @@
         padding: 5px;
         font-size: $text-xsmall;
     }
+
+    .propiedad-vendida{
+        flex-direction: column;
+        .propiedad-vendida-item img{
+            width: 50%;
+        }
+    }
+
 }
 
 @media screen and (max-width: 460px) {
 
-    .comentario .comentario__item{
-        width: 280px;
-        height: 100px;
-    
-        p{
-            width: 180px;
-            font-weight: bold;
-            color: aliceblue;
-            font-size: $text-small;
-            margin-bottom: 0;
-        }
+    .comentario{
+
+        .comentario__item{
+            width: 280px;
+            height: 100px;
         
+            p{
+                width: 180px;
+                font-weight: bold;
+                color: aliceblue;
+                font-size: $text-small;
+                margin-bottom: 0;
+            }
+            
+        }
     }
 }
-

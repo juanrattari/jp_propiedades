@@ -11,9 +11,13 @@ footer{
         list-style-type: none;
         display: flex;
         flex-wrap: nowrap;
+        padding: 0;
         
         a {
             color: $color-primary;
+            &:hover{
+                color: $color-alternative-s; 
+            }
         }
     }
     

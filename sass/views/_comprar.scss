@@ -1,7 +1,40 @@
 /* Comprar */
 
+.ventas{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    .ventas__item{
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        height: auto;
+        margin: 15px auto;
+        background-color: hsla(203, 19%, 30%, 0.055);
+        img{
+            width: 95%;
+        }
+        p{
+            text-align: center;
+        }
+        .ventas__item__precio{
+            font-size: $text-medium;
+            font-weight: 400;
+        }
+        .ventas__item__descripcion{
+            font-size: $text-base;
+            height: 250px;
+            overflow: auto;
+        }
+        .ventas__item__datos{
+            font-size: $text-small;
+        }
+    }
+}
+
 .propiedad-vendida{
-    @include flex (column, center, center, 3px);
+    @include flex (row, center, center, 3px);
 
     .propiedad-vendida-item{
         @include flex (column, center, center, 1px);
@@ -13,7 +46,8 @@
         }
 
         p{
-            text-decoration: underline;
+            font-weight: 300;
+            text-align: center;
         }
 
         img{
